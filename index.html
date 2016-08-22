@@ -6,14 +6,9 @@
     <title>Saveen Chadalawada</title>
 
     <!-- CSS  -->
-		<link rel="stylesheet" type="text/css" href="stylesheets/materialize.min.css" media="screen,projection">
-  	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="stylesheets/app.css">
-
-    <!-- JS -->
-    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/materialize.min.js"></script>
-    <script type="text/javascript" src="javascripts/app.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css" media="screen,projection" />
+  	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
   </head>
   <body>
     <div class="navbar-fixed">
@@ -35,9 +30,9 @@
         </div>
       </nav>
     </div>
-    <div class="parallax-container" style="height:390px">
+    <div class="parallax-container">
       <div class="parallax">
-        <img src="images/parallax-image.png" alt="parallax-image" height="100%" width="100%"/>
+        <img src="images/parallax-image.png" alt="parallax-image" height="100%" width="100%" />
       </div>
     </div>
     <div class="section my-card-white">
@@ -62,7 +57,25 @@
           </ul>
         </div>
         <div id="profile" class="col s12">
-          THIS IS MY PROFILE!
+          <fieldset>
+            <legend class="flow-text">Favorite Quote</legend>
+            <p id="quote" class="flow-text center-align"></p>
+          </fieldset>
+          <p class="flow-text center-align">Welcome to my website! Take a look around. There's a lot of really cool stuff here! </p>
+          <hr style="width:80%">
+          <p class="flow-text left-align">
+            A little bit about me: I'm <span id="age"></span> years old, born and raised in San Diego, California. I enjoy programming and challenging my creativity through projects such as this website. I am proficient in a myriad of languages including C#, CSS, HTML, Java, JavaScript, JQuery, Visual Basics, Unix, and I am developing my skills in Assembly, C, C++, PHP, Ruby, and SQL.
+          </p>
+          <p class="flow-text left-align">
+            Currently, I am looking for an internship position to practice what I have learned in school and gain knowledge of best practices in the professional world. In terms of education, I am leaning towards web design, UI, and UX which has slowly become a passion of mine since my first year in college.
+          </p>
+          <p class="flow-text left-align">
+            My pros include knowledge in a multitude of languages, high level of expertise with Microsoft Office and Google Docs, an optimistic attitude, and a curiosity to solve problems and test myself.
+          </p>
+          <p class="flow-text left-align">
+            Please feel free to contact me at saveenchad@gmail.com using your own emailing service or mine...
+            <i class="material-icons">trending_flat</i>
+          </p>
         </div>
         <div id="projects" class="col s12">
           THESE ARE MY PROJECTS!
@@ -72,5 +85,10 @@
         </div>
       </div>
     </div>
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

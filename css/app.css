@@ -2,6 +2,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.my-card-blue {
+	background: #2196F3;
+	color: #000;
+}
+
 .name {
 	position: relative;
 	color: #FFF;
@@ -11,14 +16,15 @@ body {
 	white-space: nowrap;
 }
 
-.my-card-blue {
-	background: #2196F3;
-	color: #000;
-	transition: background 0.5s;
+.dropdown-button:hover {
+  cursor: pointer;
+}
+
+.parallax-container {
+  height: 390px;
 }
 
 .my-card-white {
 	background: #FFF;
 	color: #000;
-	transition: background 0.5s;
 }
