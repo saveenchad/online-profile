@@ -1,0 +1,24 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.name {
+	position: relative;
+	color: #FFF;
+	display: inline-block;
+	font-size: 30px;
+	padding: 0;
+	white-space: nowrap;
+}
+
+.my-card-blue {
+	background: #2196F3;
+	color: #000;
+	transition: background 0.5s;
+}
+
+.my-card-white {
+	background: #FFF;
+	color: #000;
+	transition: background 0.5s;
+}
