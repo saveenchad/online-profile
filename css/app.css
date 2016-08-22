@@ -5,6 +5,7 @@ body {
 .my-card-blue {
 	background: #2196F3;
 	color: #000;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 .name {
@@ -25,6 +26,19 @@ body {
 }
 
 .my-card-white {
-	background: #FFF;
+	background: #eee;
 	color: #000;
+}
+
+.tabs {
+  background: #eee;
+}
+
+.tab-content {
+  padding: 20px 0;
+}
+
+.proj {
+	margin: 0 20px;
+  padding: 0 !important;
 }

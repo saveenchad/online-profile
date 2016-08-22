@@ -32,7 +32,7 @@
     </div>
     <div class="parallax-container">
       <div class="parallax">
-        <img src="images/parallax-image.png" alt="parallax-image" height="100%" width="100%" />
+        <img src="images/parallax-image.png" alt="parallax-image" />
       </div>
     </div>
     <div class="section my-card-white">
@@ -42,52 +42,174 @@
             <li class="tab col s4">
               <a class="tab-link active" href="#profile">
                 <i class="material-icons">face</i>
+                Profile
               </a>
             </li>
             <li class="tab col s4">
               <a class="tab-link active" href="#projects">
                 <i class="material-icons">developer_board</i>
+                Projects
               </a>
             </li>
             <li class="tab col s4">
               <a class="tab-link active" href="#resume">
                 <i class="material-icons">person_pin</i>
+                Resume
               </a>
             </li>
           </ul>
         </div>
         <div id="profile" class="col s12">
-          <fieldset>
-            <legend class="flow-text">Favorite Quote</legend>
-            <p id="quote" class="flow-text center-align"></p>
-          </fieldset>
-          <p class="flow-text center-align">Welcome to my website! Take a look around. There's a lot of really cool stuff here! </p>
-          <hr style="width:80%">
-          <p class="flow-text left-align">
-            A little bit about me: I'm <span id="age"></span> years old, born and raised in San Diego, California. I enjoy programming and challenging my creativity through projects such as this website. I am proficient in a myriad of languages including C#, CSS, HTML, Java, JavaScript, JQuery, Visual Basics, Unix, and I am developing my skills in Assembly, C, C++, PHP, Ruby, and SQL.
-          </p>
-          <p class="flow-text left-align">
-            Currently, I am looking for an internship position to practice what I have learned in school and gain knowledge of best practices in the professional world. In terms of education, I am leaning towards web design, UI, and UX which has slowly become a passion of mine since my first year in college.
-          </p>
-          <p class="flow-text left-align">
-            My pros include knowledge in a multitude of languages, high level of expertise with Microsoft Office and Google Docs, an optimistic attitude, and a curiosity to solve problems and test myself.
-          </p>
-          <p class="flow-text left-align">
-            Please feel free to contact me at saveenchad@gmail.com using your own emailing service or mine...
-            <i class="material-icons">trending_flat</i>
-          </p>
+          <div class="tab-content">
+            <fieldset>
+              <p id="quote" class="flow-text center-align"></p>
+            </fieldset>
+            <p class="flow-text center-align">Welcome to my website! Take a look around. There's a lot of really cool stuff here! </p>
+            <hr style="width:80%">
+            <p class="flow-text left-align">
+              A little bit about me: I'm <span id="age"></span> years old, born and raised in San Diego, California. I enjoy programming especially in a web dev environment. I am proficient in a myriad of languages including HTML, CSS, JavaScript, JQuery, AngularJS, and Bootstrap.
+            </p>
+          </div>
         </div>
         <div id="projects" class="col s12">
-          THESE ARE MY PROJECTS!
+          <div class="tab-content">
+            <div class="row">
+              <div class="card col m3 offset-m1 proj hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/busy-blocks.png" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Busy Blocks<i class="material-icons right">more_vert</i></span>
+                  <p><a href="http://hipster.parseapp.com" target="_blank">Click to Visit!</a></p>
+                  <p><a href="https://www.youtube.com/watch?v=pRWh3QA9OtI" target="_blank">Learn More (video)</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Busy Blocks<i class="material-icons right">close</i></span>
+                  <p>Technologies: HTML, CSS, Bootstrap, AngularJS, Parse, Git</p>
+                  <p>
+                    This website, brought to you by Team HIPSTER (Humans in Programming, Science, Technology, Engineering, and Research),
+                    is the future of scheduling. It combines social media and a calendar to make scheduling group events a breeze!.
+                  </p>
+                </div>
+              </div>
+              <div class="card col m3 proj hoverable">
+						    <div class="card-image waves-effect waves-block waves-light">
+						    	<img class="activator" src="images/raspberry-pi.png" />
+						    </div>
+						    <div class="card-content">
+						    	<span class="card-title activator grey-text text-darken-4">Raspberry Pi Server<i class="material-icons right">more_vert</i></span>
+						    </div>
+						    <div class="card-reveal">
+						    	<span class="card-title grey-text text-darken-4">Raspberry Pi Server<i class="material-icons right">close</i></span>
+						    	<p>Technologies: Unix, Raspbian, Apache 2.2.22</p>
+						    	<p>
+						    		This web server hosts all of my projects and allows them to be accessible from any computer. It has it's own static
+										IP address, emailing capability, and can access an SQL server.
+									</p>
+						    </div>
+						  </div>
+              <div class="card col m3 proj hoverable">
+						    <div class="card-image waves-effect waves-block waves-light">
+						    	<img class="activator" src="images/spudnik.png">
+						    </div>
+						    <div class="card-content">
+						    	<span class="card-title activator grey-text text-darken-4">Spudnik<i class="material-icons right">more_vert</i></span>
+						    	<p><a href="#" target="_blank">Click to play!</a></p>
+						    </div>
+						    <div class="card-reveal">
+						    	<span class="card-title">Spudnik<i class="material-icons right">close</i></span>
+						    	<p>Technologies: JavaScript, GameMaker</p>
+						    	<p>
+						    		Spudnik is a classic first person shooter with a twist...it's neither first person nor shooter! This game will capture your attention and take you on a journey unlike which you have ever been on. "Expect a roller coaster of emotions..." said Lead Game Designer, Vlad Klimkiv.
+						    	</p>
+						    	<p>
+						    		Senior Sound Engineer, Mikey Cho was reported to have said "...I would give it 6 stars out of 5...", but he was talking about the music in the background - which he made.
+						    	</p>
+						    	<p>
+						    		Meanwhile, Director of Level Design, Saveen Chadalawada, stated "Lots of blood, sweat, and tears... well, mostly tears...actually, all of it was tears...went into this project."
+						    	</p>
+						    	<p>
+						    		Spudnik tells the story of Spudnik, a brave potato astronaut lost in space in search of his home. Avoid the perils of space and get to the wormholes using the tools given in each level and get Spudnik home!
+						    	</p>
+						    </div>
+  						</div>
+            </div>
+            <div class="row">
+              <div class="card col m3 offset-m1 proj hoverable">
+						    <div class="card-image waves-effect waves-block waves-light">
+						    	<img class="activator" src="images/foodtime.jpg">
+						    </div>
+						    <div class="card-content">
+						    	<span class="card-title activator grey-text text-darken-4">FoodTime<i class="material-icons right">more_vert</i></span>
+						    	<p><a href="#">Click to visit!</a></p>
+						    </div>
+						    <div class="card-reveal">
+						    	<span class="card-title grey-text text-darken-4">FoodTime<i class="material-icons right">close</i></span>
+						    	<p>Technologies: HTML, CSS, JavaScript, JSON, Python</p>
+						    	<p>
+						    		FoodTime, created during a 12 hour hackathon, is a website dedicated to making the lives of UCSD students easier. This project displays all the food items located in each of the dining halls in a quick and user friendly format.
+						    	</p>
+						    	<p>
+						    		FoodTime uses JSON to read the official menus on the UCSD Dining website. It creates a side bar menu using each item listed and dynamically changes each day.
+						    	</p>
+						    	<p>
+						    		Unfortunately, the project is not finished. The plan is to make the full menu be stored in cache so that one look at the beginning of the day is all that is needed to be informed of the food options around campus. And subsequent looks can be made offline. We also want to provide pictures, description, nutritional facts, and helpful reviews by other students for each item. To do this, we plan to use SQL to create a database
+						    	</p>
+						    </div>
+  						</div>
+              <div class="card col m3 proj hoverable">
+						    <div class="card-image waves-effect waves-block waves-light">
+						    	<img class="activator" src="images/target-app.jpg">
+						    </div>
+						    <div class="card-content">
+						    	<span class="card-title activator grey-text text-darken-4">Food Ave.<i class="material-icons right">more_vert</i></span>
+						    </div>
+						    <div class="card-reveal">
+						    	<span class="card-title grey-text text-darken-4">Food Ave.<i class="material-icons right">close</i></span>
+								<p>Technologies: Visual Basic, SQL, Visual Studio</p>
+								<p>
+									The Food Ave. application was my first project. I created this after my first programming class in community college. It replicated the GUI that I used while working at Target.
+								</p>
+								<p>
+									This project uses SQL to read one table in a Microsoft Access file to login to the system, and reads another table to display the selected items and prices in a list view. You can also add new users to be able to login, void single items from the list, void all the items from the list, and even input valid coupons which is accomplished by reading another table.
+								</p>
+								<p>
+									This is by far my most favorite project because it opened my eyes to the world of programming. By creating this, I wanted to learn more and add more to the user experience.
+								</p>
+						    </div>
+  						</div>
+              <div class="card col m3 proj hoverable">
+						    <div class="card-image waves-effect waves-block waves-light">
+						    	<img class="activator" src="images/matrix.jpg">
+						    </div>
+						    <div class="card-content">
+						    	<span class="card-title activator grey-text text-darken-4">Matrix<i class="material-icons right">more_vert</i></span>
+						    	<p><a href="#">Click to visit!</a></p>
+						    </div>
+						    <div class="card-reveal">
+						    	<span class="card-title grey-text text-darken-4">Matrix<i class="material-icons right">close</i></span>
+						    	<p>Technologies: HTML, CSS, JavaScript</p>
+						    	<p>
+						    		The Matrix animation is another one of my more favorite programs that I have written. This is because I had this idea for a couple of days. After thinking about the process that it would take, I wrote a generic version that wasn't nearly as visually appeasing.
+						    	</p>
+						    	<p>
+						    		I did some research and patched up the code and eventually got the final product. It amazes me how in the span of one week, I went from an idea to a finished product that I could dynamically change to my liking.
+						    	</p>
+						    </div>
+  						</div>
+            </div>
+          </div>
         </div>
         <div id="resume" class="col s12">
-          THIS IS MY RESUME!
+          <div class="tab-content">
+            THIS IS MY RESUME!
+          </div>
         </div>
       </div>
     </div>
 
     <!-- JS -->
-    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
