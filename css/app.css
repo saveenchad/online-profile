@@ -8,6 +8,12 @@ body {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
+img.responsive-img {
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+}
+
 .name {
 	position: relative;
 	color: #FFF;
@@ -25,7 +31,7 @@ body {
   height: 390px;
 }
 
-.my-card-white {
+.main-content {
 	background: #eee;
 	color: #000;
 }
@@ -38,7 +44,35 @@ body {
   padding: 20px 0;
 }
 
+.intro {
+  padding: 0 20px;
+}
+
 .proj {
 	margin: 0 20px;
   padding: 0 !important;
+}
+
+.proj:nth-child(odd) {
+  animation: curve-up-from-left .5s .25s ease both;
+  transform-origin: top left;
+}
+
+.proj:nth-child(even) {
+  animation: curve-up-from-right .5s .25s ease both;
+  transform-origin: top right;
+}
+
+@keyframes curve-up-from-left {
+  from {
+    transform: translateY(10rem) rotate(15deg);
+    opacity: 0;
+  }
+}
+
+@keyframes curve-up-from-right {
+  from {
+    transform: translateY(10rem) rotate(-15deg);
+    opacity: 0;
+  }
 }
