@@ -15,7 +15,10 @@
       <nav>
         <div class="nav-wrapper my-card-blue">
           <div class="left">
-            <a class="name">Saveen Chadalawada</a>
+            <div class="valign-wrapper">
+              <img src="images/profile.jpg" alt="profile" class="circle responsive-img valign-wrapper" height="" />
+              <a class="name">Saveen Chadalawada</a>
+            </div>
           </div>
           <ul class="right">
             <li>
@@ -35,7 +38,7 @@
         <img src="images/parallax-image.png" alt="parallax-image" />
       </div>
     </div>
-    <div class="section my-card-white">
+    <div class="section main-content">
       <div class="row">
         <div class="col s12">
           <ul class="tabs">
@@ -64,15 +67,31 @@
             <fieldset>
               <p id="quote" class="flow-text center-align"></p>
             </fieldset>
-            <p class="flow-text center-align">Welcome to my website! Take a look around. There's a lot of really cool stuff here! </p>
+            <p class="flow-text grey-text text-darken-4 center-align">Welcome to my website! Take a look around. There's a lot of really cool stuff here! </p>
             <hr style="width:80%">
-            <p class="flow-text left-align">
-              A little bit about me: I'm <span id="age"></span> years old, born and raised in San Diego, California. I enjoy programming especially in a web dev environment. I am proficient in a myriad of languages including HTML, CSS, JavaScript, JQuery, AngularJS, and Bootstrap.
+            <p class="flow-text grey-text text-darken-4 left-align intro">
+              A little bit about me: I'm <span id="age"></span> years old, born
+              and raised in San Diego, California. I enjoy programming especially
+              in a web dev environment with a focus on UI and UX. I am proficient
+              in a myriad of languages including HTML, CSS, JavaScript, JQuery,
+              AngularJS, and Bootstrap.
+            </p>
+            <p class="flow-text grey-text text-darken-4 left-align intro">
+              Currently, I'm looking to gain more experience in the web dev field.
+              I want to eventually become proficient with more backend technologies
+              such as MongoDB and NodeJS.
+            </p>
+            <p class="flow-text grey-text text-darken-4 left-align intro">
+              Unfortunately, I am <b>not</b> looking for a job right now as I already
+              have an internship and full time offer (pending graduation) from BAE Systems Inc.
             </p>
           </div>
         </div>
         <div id="projects" class="col s12">
           <div class="tab-content">
+            <div class="row">
+              <h5><blockquote class="blue-text">Past Projects</blockquote></h5>
+            </div>
             <div class="row">
               <div class="card col m3 offset-m1 proj hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -198,18 +217,102 @@
 						    </div>
   						</div>
             </div>
+            <div class="row">
+              <h5><blockquote class="blue-text">Planned Projects</blockquote></h5>
+            </div>
+            <div class="row">
+              <div class="card col m3 offset-m1 proj hoverable">
+						    <div class="card-image waves-effect waves-block waves-light">
+						    	<img class="activator" src="images/beep.png">
+						    </div>
+						    <div class="card-content">
+						    	<span class="card-title activator grey-text text-darken-4">Beep<i class="material-icons right">more_vert</i></span>
+						    	<p><a href="#">Click to Follow the Journey!</a></p>
+						    </div>
+						    <div class="card-reveal">
+						    	<span class="card-title grey-text text-darken-4">Beep<i class="material-icons right">close</i></span>
+						    	<p>Technologies: HTML, CSS, JavaScript, Socket.io</p>
+						    	<p>
+					          Beep is a parking aid app designed for UCSD students. I thought
+                    of the idea while struggling to find parking before my classes.
+						    	</p>
+						    	<p>
+                    While taking COGS 187a, my team and I were able to make mockups,
+                    and research need finding and personas in potential users. We recorded
+                    the journey using Medium. Through the class, we got multiple professors
+                    hooked on our idea and they encouraged us to fully develop the app after
+                    the class was over.
+						    	</p>
+                  <p>
+                    The plan is to fully implement the app within the next year :D
+                  </p>
+						    </div>
+  						</div>
+              <div class="card col m3 proj hoverable">
+						    <div class="card-image waves-effect waves-block waves-light">
+						    	<img class="activator" src="images/magic-mirror.jpg">
+						    </div>
+						    <div class="card-content">
+						    	<span class="card-title activator grey-text text-darken-4">Magic Mirror<i class="material-icons right">more_vert</i></span>
+						    </div>
+						    <div class="card-reveal">
+						    	<span class="card-title grey-text text-darken-4">Magic Mirror<i class="material-icons right">close</i></span>
+						    	<p>Technologies: Raspberry Pi, Two-Way Mirror, HTML, CSS</p>
+						    	<p>
+					          One of the projects I've been interested in for a long time is the
+                    magic mirror. They way this works is that a two-way mirror is positioned
+                    above a monitor with a black screen and custom white text. Since a
+                    two-way mirror is used, when there is black behind it, the mirror is just
+                    a normal mirror. With light behind it (our side), it becomes transparent
+                    like glass.
+						    	</p>
+						    	<p>
+                    Unfortunately, all the individual pieces that make up the magic
+                    mirror cost a lot of money so this project has been in the backlogs
+                    for a while :'(. But hopefully, I can work on it after graduating.
+						    	</p>
+						    </div>
+  						</div>
+              <div class="card col m3 proj hoverable">
+						    <div class="card-image waves-effect waves-block waves-light">
+						    	<img class="activator" src="images/busy-blocks.png">
+						    </div>
+						    <div class="card-content">
+						    	<span class="card-title activator grey-text text-darken-4">Migration Project<i class="material-icons right">more_vert</i></span>
+						    </div>
+						    <div class="card-reveal">
+						    	<span class="card-title grey-text text-darken-4">Migration Project<i class="material-icons right">close</i></span>
+						    	<p>Technologies: MongoDB, ExpressJS, AngularJS, NodeJS</p>
+						    	<p>
+					          With Parse ending it's services in January 2017, one of the projects
+                    I wanted to work on over the summer was to convert Busy Block's
+                    backend from using Parse's database services to Mongo's database services.
+						    	</p>
+						    	<p>
+                    Along with that, our front end was exclusively written in AngularJS, and i
+                    would like to upgrade it to using a MEAN stack architecture to make it
+                    easier to maintain and add functionality to.
+						    	</p>
+						    </div>
+  						</div>
+            </div>
           </div>
         </div>
         <div id="resume" class="col s12">
           <div class="tab-content">
-            THIS IS MY RESUME!
+            <div class="row center-align">
+              <object data="resume/saveen-resume.pdf" type="application/pdf"
+                      width="750" height="1050" class="z-depth-2">
+                Your browser does not support displaying pdfs
+              </object>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- JS -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
