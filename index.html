@@ -21,11 +21,23 @@
               <a class="name">Saveen Chadalawada</a>
             </div>
           </div>
-          <ul class="right">
-            <li>
-              <a class="dropdown-button" data-activates="social-media-drop"><i class="material-icons">share</i></a>
-            </li>
-          </ul>
+          <div class="right">
+            <ul>
+              <li>
+                <div class="switch">
+                  <label>
+                    Light
+                    <input type="checkbox" id="themeSwitch" />
+                    <span class="lever"></span>
+                    Dark
+                  </label>
+                </div>
+              </li>
+              <li>
+                <a class="dropdown-button" data-activates="social-media-drop"><i class="material-icons">share</i></a>
+              </li>
+            </ul>
+          </div>
           <ul id="social-media-drop" class="dropdown-content">
             <li><a href="https://www.facebook.com/saveen.chadalawada">Facebook</a></li>
             <li><a href="https://plus.google.com/+SaveenChadalawada/">Google+</a></li>
@@ -68,21 +80,28 @@
             <fieldset>
               <p id="quote" class="flow-text center-align"></p>
             </fieldset>
-            <p class="flow-text grey-text text-darken-4 center-align">Welcome to my website! Take a look around. There's a lot of really cool stuff here! </p>
+            <p class="flow-text center-align">Welcome to my website! Take a look around. There's a lot of really cool stuff here! </p>
             <hr style="width:80%">
-            <p class="flow-text grey-text text-darken-4 left-align intro">
+            <p class="flow-text left-align intro">
               A little bit about me: I'm <span id="age"></span> years old, born
               and raised in San Diego, California. I enjoy programming especially
               in a web dev environment with a focus on UI and UX. I am proficient
               in a myriad of languages including HTML, CSS, JavaScript, JQuery,
               AngularJS, and Bootstrap.
             </p>
-            <p class="flow-text grey-text text-darken-4 left-align intro">
-              Currently, I'm looking to gain more experience in the web dev field.
-              I want to eventually become proficient with more backend technologies
-              such as MongoDB and NodeJS.
+            <p class="flow-text left-align intro">
+              At the moment, I am working on getting my Bachelors in Computer Science
+              from UCSD. I am approximately two quarters away from graduation with an
+              expected time frame of March 2017. In terms of education, my plans for
+              the future include a Masters in Cognitive Science with a focus on
+              Human Computer Interaction (HCI).
             </p>
-            <p class="flow-text grey-text text-darken-4 left-align intro">
+            <p class="flow-text left-align intro">
+              From a personal experience standpoint, I'm looking to gain more experience
+              in the web dev field. I want to eventually become proficient with more backend
+              technologies such as MongoDB and NodeJS.
+            </p>
+            <p class="flow-text left-align intro">
               Unfortunately, I am <b>not</b> looking for a job right now as I already
               have an internship and full time offer (pending graduation) from BAE Systems Inc.
               which I am very excited about.
@@ -101,8 +120,9 @@
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4">Busy Blocks<i class="material-icons right">more_vert</i></span>
-                  <p><a href="http://hipster.parseapp.com" target="_blank">Click to Visit!</a></p>
-                  <p><a href="https://www.youtube.com/watch?v=pRWh3QA9OtI" target="_blank">Learn More (video)</a></p>
+                  <p><a href="http://hipster.parseapp.com">Click to Visit!</a></p>
+                  <p><a href="https://www.youtube.com/watch?v=pRWh3QA9OtI">Learn More (video)</a></p>
+                  <p><a href="#">Learn More (Blog)</a></p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4">Busy Blocks<i class="material-icons right">close</i></span>
@@ -135,7 +155,7 @@
 						    </div>
 						    <div class="card-content">
 						    	<span class="card-title activator grey-text text-darken-4">Spudnik<i class="material-icons right">more_vert</i></span>
-						    	<p><a href="#" target="_blank">Click to play!</a></p>
+						    	<p><a href="http://emberfrost.com/games/spudnik">Click to play!</a></p>
 						    </div>
 						    <div class="card-reveal">
 						    	<span class="card-title">Spudnik<i class="material-icons right">close</i></span>
@@ -311,11 +331,112 @@
           </div>
         </div>
       </div>
-    </div>
+      <!-- <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+		    <a class="btn-floating btn-large red">
+		    	<i class="large material-icons">email</i>
+		    </a>
+		    <ul>
+		    	<li>
+		    		<a class="btn-floating purple tooltipped email-modal-trigger" data-position="left" data-tooltip="Yahoo!" href="#emailModal">
+		    			<i class="material-icons">mode_edit</i>
+		    		</a>
+		    	</li>
+		    	<li>
+		    		<a class="btn-floating blue tooltipped email-modal-trigger" data-position="left" data-tooltip="Gmail" href="#emailModal">
+		    			<i class="material-icons">mode_edit</i>
+		    		</a>
+		    	</li>
+		    </ul>
+  		</div> -->
+
+      <!-- MODALS -->
+      <!-- <div id="emailModal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4 class="grey-text text-darken-4">Contact Me!</h4>
+          <div class="row">
+            <div class="input-field col s10 offset-s1">
+              <i class="material-icons prefix grey-text text-darken-4">account_box</i>
+              <input type="text" id="name" class="validate" name="name"/>
+              <label for="name">Full Name</label>
+            </div>
+            <div class="input-field col s10 offset-s1">
+              <i class="material-icons prefix grey-text text-darken-4">mail</i>
+              <input type="email" id="email" class="validate" name="email">
+              <label for="email">Your Email</label>
+            </div>
+            <div class="input-field col s10 offset-s1">
+              <i class="material-icons prefix grey-text text-darken-4">business</i>
+              <input type="text" id="company" class="validate" name="company">
+              <label for="comp">Company (optional)</label>
+            </div>
+            <div class="input-field col s10 offset-s1">
+              <i class="material-icons prefix grey-text text-darken-4">sms</i>
+              <textarea id="body" class="materialize-textarea" name="body"></textarea>
+              <label for="body">Offer job here (optional)</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="modal-action waves-effect waves-green btn-flat" onclick="sendEmail()">Send</button>
+          <button class="modal-action waves-effect waves-green btn-flat">Refresh</button>
+          <button class="modal-action modal-close waves-effect waves-green btn-flat">Close</button>
+        </div>
+      </div> -->
 
     <!-- JS -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <!-- <script type="text/javascript">
+      var globalFlags = {
+        valid: true,
+        undo: false
+      };
+
+      var regex = {
+        username: /^[a-z]([a-z_\s])+$/i,
+        email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+      };
+
+      function sendEmail() {
+        globalFlags.valid = true;
+        var name = $('#name'), email = $('#email'), comp = $('#company');
+
+        globalFlags.valid = globalFlags.valid && checkLength(name, 'name', 2, 50);
+        globalFlags.valid = globalFlags.valid && valInput(name, regex.username, 'name');
+
+        globalFlags.valid = globalFlags.valid && checkLength(email, 'email', 6, 80);
+        globalFlags.valid = globalFlags.valid && valInput(email, regex.email, 'email');
+
+        if (globalFlags.valid) {
+          // $('#emailModal').closeModal();
+          //resetEmail();
+          Materialize.toast('<span>Email Sent!</span><span class="btn-flat yellow-text" onclick="undo()">Undo</span>', 5000);
+        }
+      };
+
+      function checkLength(input, strName, min, max) {
+        if (input.val().length > max || input.val().length < min) {
+          Materialize.toast('The length of your ' + strName + ' must be between ' + min + ' and ' + max + ' characters!', 5000);
+          return false;
+        } else {
+          return true;
+        }
+      };
+
+      function valInput(input, regex, name) {
+        if (!(regex.test(input.val()))) {
+          Materialize.toast("That doesn't look like an actual " + name + "...but I don't judge", 5000);
+          return false;
+        } else {
+          return true;
+        }
+      };
+
+      function undo() {
+        undoFlag = true;
+        Materialize.toast("Email not sent!", 5000);
+      };
+    </script> -->
   </body>
 </html>

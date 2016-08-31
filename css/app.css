@@ -5,7 +5,9 @@ body {
 .my-card-blue {
 	background: #2196F3;
 	color: #000;
+  padding: 0 20px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  transition: background 0.5s;
 }
 
 img.responsive-img {
@@ -23,6 +25,14 @@ img.responsive-img {
 	white-space: nowrap;
 }
 
+.subtitle {
+  font-weight: 100;
+}
+
+.switch label {
+  color: white;
+}
+
 .dropdown-button:hover {
   cursor: pointer;
 }
@@ -33,7 +43,7 @@ img.responsive-img {
 
 .main-content {
 	background: #eee;
-	color: #000;
+	color: #212121;
 }
 
 .tabs {
@@ -75,4 +85,48 @@ img.responsive-img {
     transform: translateY(10rem) rotate(-15deg);
     opacity: 0;
   }
+}
+
+/* MOBILE PHONES */
+
+@media only screen and (max-width: 768px) {
+    div.right, img.circle {
+      display: none;
+    }
+
+    .proj {
+        margin: 10px 20px;
+        padding: 0 !important;
+    }
+}
+
+/* DARK THEME */
+.dark {
+  transition: background 0.5s;
+}
+
+body.dark, .tabs.dark {
+  background: #222;
+}
+
+.my-card-blue.dark, .main-content.dark {
+  background: #222;
+  color: #ccc;
+}
+
+.card.dark, .card-reveal.dark {
+  background: #111;
+  color: #ccc;
+}
+
+.card.dark .card-title {
+  color: #ccc !important;
+}
+
+.dropdown-content.dark {
+	background: #111;
+}
+
+.dropdown-content.dark li.active, .dropdown-content.dark li:hover{
+	background: #ccc;
 }
