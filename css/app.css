@@ -37,6 +37,10 @@ img.responsive-img {
   cursor: pointer;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .parallax-container {
   height: 390px;
 }
@@ -90,13 +94,29 @@ img.responsive-img {
 /* MOBILE PHONES */
 
 @media only screen and (max-width: 768px) {
-    div.right, img.circle {
+    .theme-switch, .social-menu {
       display: none;
+    }
+
+    .mobile-menu {
+      display: list-item;
     }
 
     .proj {
         margin: 10px 20px;
         padding: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    img.circle {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .mobile-menu {
+      display: none;
     }
 }
 
