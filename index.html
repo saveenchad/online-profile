@@ -23,7 +23,7 @@
           </div>
           <div class="right">
             <ul>
-              <li>
+              <li class="theme-switch">
                 <div class="switch">
                   <label>
                     Light
@@ -33,8 +33,11 @@
                   </label>
                 </div>
               </li>
-              <li>
+              <li class="social-menu">
                 <a class="dropdown-button" data-activates="social-media-drop"><i class="material-icons">share</i></a>
+              </li>
+              <li class="mobile-menu">
+                <a class="dropdown-button" data-activates="mobile-dropdown"><i class="material-icons">more_vert</i></a>
               </li>
             </ul>
           </div>
@@ -42,6 +45,14 @@
             <li><a href="https://www.facebook.com/saveen.chadalawada">Facebook</a></li>
             <li><a href="https://plus.google.com/+SaveenChadalawada/">Google+</a></li>
             <li><a href="https://www.linkedin.com/in/saveen-chadalawada-0a6a8359">LinkedIn</a></li>
+          </ul>
+          <ul id="mobile-dropdown" class="dropdown-content">
+            <li><a href="https://www.facebook.com/saveen.chadalawada">Facebook</a></li>
+            <li><a href="https://plus.google.com/+SaveenChadalawada/">Google+</a></li>
+            <li><a href="https://www.linkedin.com/in/saveen-chadalawada-0a6a8359">LinkedIn</a></li>
+            <li class="divider"></li>
+            <li><span onclick="changeTheme('light')">Light</span></li>
+            <li><span onclick="changeTheme('dark')">Dark</span></li>
           </ul>
         </div>
       </nav>
@@ -119,10 +130,10 @@
                   <img class="activator" src="images/busy-blocks.png" />
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Busy Blocks<i class="material-icons right">more_vert</i></span>
+                  <span class="card-title activator grey-text text-darken-4">Busy Blocks<i class="material-icons right">info_outline</i></span>
                   <p><a href="http://hipster.parseapp.com">Click to Visit!</a></p>
                   <p><a href="https://www.youtube.com/watch?v=pRWh3QA9OtI">Learn More (video)</a></p>
-                  <p><a href="./busy-blocks-blog.html">Learn More (Blog)</a></p>
+                  <!-- <p><a href="./busy-blocks-blog.html">Learn More (Blog)</a></p> -->
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4">Busy Blocks<i class="material-icons right">close</i></span>
@@ -138,7 +149,7 @@
 						    	<img class="activator" src="images/raspberry-pi.png" />
 						    </div>
 						    <div class="card-content">
-						    	<span class="card-title activator grey-text text-darken-4">Raspberry Pi Server<i class="material-icons right">more_vert</i></span>
+						    	<span class="card-title activator grey-text text-darken-4">Raspberry Pi Server<i class="material-icons right">info_outline</i></span>
 						    </div>
 						    <div class="card-reveal">
 						    	<span class="card-title grey-text text-darken-4">Raspberry Pi Server<i class="material-icons right">close</i></span>
@@ -154,7 +165,7 @@
 						    	<img class="activator" src="images/spudnik.png">
 						    </div>
 						    <div class="card-content">
-						    	<span class="card-title activator grey-text text-darken-4">Spudnik<i class="material-icons right">more_vert</i></span>
+						    	<span class="card-title activator grey-text text-darken-4">Spudnik<i class="material-icons right">info_outline</i></span>
 						    	<p><a href="http://emberfrost.com/games/spudnik">Click to play!</a></p>
 						    </div>
 						    <div class="card-reveal">
@@ -181,7 +192,7 @@
 						    	<img class="activator" src="images/foodtime.jpg">
 						    </div>
 						    <div class="card-content">
-						    	<span class="card-title activator grey-text text-darken-4">FoodTime<i class="material-icons right">more_vert</i></span>
+						    	<span class="card-title activator grey-text text-darken-4">FoodTime<i class="material-icons right">info_outline</i></span>
 						    	<p><a href="http://acsweb.ucsd.edu/~sachadal/website/foodtime/foodtime.php">Click to visit!</a></p>
 						    </div>
 						    <div class="card-reveal">
@@ -203,7 +214,7 @@
 						    	<img class="activator" src="images/target-app.jpg">
 						    </div>
 						    <div class="card-content">
-						    	<span class="card-title activator grey-text text-darken-4">Food Ave.<i class="material-icons right">more_vert</i></span>
+						    	<span class="card-title activator grey-text text-darken-4">Food Ave.<i class="material-icons right">info_outline</i></span>
 						    </div>
 						    <div class="card-reveal">
 						    	<span class="card-title grey-text text-darken-4">Food Ave.<i class="material-icons right">close</i></span>
@@ -224,7 +235,7 @@
 						    	<img class="activator" src="images/matrix.jpg">
 						    </div>
 						    <div class="card-content">
-						    	<span class="card-title activator grey-text text-darken-4">Matrix<i class="material-icons right">more_vert</i></span>
+						    	<span class="card-title activator grey-text text-darken-4">Matrix<i class="material-icons right">info_outline</i></span>
 						    	<p><a href="http://acsweb.ucsd.edu/~sachadal/website/matrix/MatrixAnimation.html">Click to visit!</a></p>
 						    </div>
 						    <div class="card-reveal">
@@ -248,7 +259,7 @@
 						    	<img class="activator" src="images/beep.png">
 						    </div>
 						    <div class="card-content">
-						    	<span class="card-title activator grey-text text-darken-4">Beep<i class="material-icons right">more_vert</i></span>
+						    	<span class="card-title activator grey-text text-darken-4">Beep<i class="material-icons right">info_outline</i></span>
 						    	<p><a href="https://medium.com/@beepucsd">Click to Follow the Journey!</a></p>
 						    </div>
 						    <div class="card-reveal">
@@ -275,7 +286,7 @@
 						    	<img class="activator" src="images/magic-mirror.jpg">
 						    </div>
 						    <div class="card-content">
-						    	<span class="card-title activator grey-text text-darken-4">Magic Mirror<i class="material-icons right">more_vert</i></span>
+						    	<span class="card-title activator grey-text text-darken-4">Magic Mirror<i class="material-icons right">info_outline</i></span>
 						    </div>
 						    <div class="card-reveal">
 						    	<span class="card-title grey-text text-darken-4">Magic Mirror<i class="material-icons right">close</i></span>
@@ -300,7 +311,7 @@
 						    	<img class="activator" src="images/busy-blocks.png">
 						    </div>
 						    <div class="card-content">
-						    	<span class="card-title activator grey-text text-darken-4">Migration Project<i class="material-icons right">more_vert</i></span>
+						    	<span class="card-title activator grey-text text-darken-4">Migration Project<i class="material-icons right">info_outline</i></span>
 						    </div>
 						    <div class="card-reveal">
 						    	<span class="card-title grey-text text-darken-4">Migration Project<i class="material-icons right">close</i></span>
@@ -323,9 +334,12 @@
         <div id="resume" class="col s12">
           <div class="tab-content">
             <div class="row center-align">
+              <a href="https://registry.jsonresume.org/saveenchad">View JSON resume instead!</a>
+            </div>
+            <div class="row center-align">
               <object data="pdfs/saveen-resume.pdf" type="application/pdf"
                       width="750" height="1050" class="z-depth-2">
-                Your browser does not support displaying pdfs
+                Unfortunately, your browser does not support displaying pdfs
               </object>
             </div>
           </div>
