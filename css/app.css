@@ -115,8 +115,15 @@ img.responsive-img {
 }
 
 @media only screen and (max-width: 420px) {
-    .mobile-menu {
-      display: none;
+    .name {
+      max-width: 260px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow-x: hidden;
+    }
+
+    .mobile-menu .dropdown-button {
+      padding: 0;
     }
 }
 

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Saveen Chadalawada</title>
     <base target="_blank">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <!-- CSS  -->
-		<link rel="stylesheet" type="text/css" href="css/materialize.min.css" media="screen,projection" />
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css" media="screen" />
   	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" type="text/css" href="css/app.css" />
   </head>
@@ -17,7 +20,7 @@
         <div class="nav-wrapper my-card-blue">
           <div class="left">
             <div class="valign-wrapper">
-              <img src="images/profile.jpg" alt="profile" class="circle responsive-img valign-wrapper" height="" />
+              <img src="images/profile.jpg" alt="profile" class="circle responsive-img valign-wrapper" />
               <a class="name">Saveen Chadalawada</a>
             </div>
           </div>
@@ -110,24 +113,24 @@
             <p class="flow-text left-align intro">
               From a personal experience standpoint, I'm looking to gain more experience
               in the web dev field. I want to eventually become proficient with more backend
-              technologies such as MongoDB and NodeJS.
+              technologies such as AngularJS 2.0, MongoDB and NodeJS.
             </p>
-            <p class="flow-text left-align intro">
+            <!-- <p class="flow-text left-align intro">
               Unfortunately, I am <b>not</b> looking for a job right now as I already
               have an internship and full time offer (pending graduation) from BAE Systems Inc.
               which I am very excited about.
-            </p>
+            </p> -->
           </div>
         </div>
         <div id="projects" class="col s12">
           <div class="tab-content">
             <div class="row">
-              <h5><blockquote class="blue-text">Past Projects</blockquote></h5>
+              <blockquote class="blue-text"><h5>Past Projects</h5></blockquote>
             </div>
             <div class="row">
               <div class="card col m3 offset-m1 proj hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="images/busy-blocks.png" />
+                  <img class="activator" src="images/busy-blocks.png" alt="busy-blocks"/>
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4">Busy Blocks<i class="material-icons right">info_outline</i></span>
@@ -146,7 +149,7 @@
               </div>
               <div class="card col m3 proj hoverable">
 						    <div class="card-image waves-effect waves-block waves-light">
-						    	<img class="activator" src="images/raspberry-pi.png" />
+						    	<img class="activator" src="images/raspberry-pi.png" alt="raspberry-pi"/>
 						    </div>
 						    <div class="card-content">
 						    	<span class="card-title activator grey-text text-darken-4">Raspberry Pi Server<i class="material-icons right">info_outline</i></span>
@@ -162,7 +165,7 @@
 						  </div>
               <div class="card col m3 proj hoverable">
 						    <div class="card-image waves-effect waves-block waves-light">
-						    	<img class="activator" src="images/spudnik.png">
+						    	<img class="activator" src="images/spudnik.png" alt="spudnik">
 						    </div>
 						    <div class="card-content">
 						    	<span class="card-title activator grey-text text-darken-4">Spudnik<i class="material-icons right">info_outline</i></span>
@@ -189,7 +192,7 @@
             <div class="row">
               <div class="card col m3 offset-m1 proj hoverable">
 						    <div class="card-image waves-effect waves-block waves-light">
-						    	<img class="activator" src="images/foodtime.jpg">
+						    	<img class="activator" src="images/foodtime.jpg" alt="foodtime">
 						    </div>
 						    <div class="card-content">
 						    	<span class="card-title activator grey-text text-darken-4">FoodTime<i class="material-icons right">info_outline</i></span>
@@ -212,7 +215,26 @@
   						</div>
               <div class="card col m3 proj hoverable">
 						    <div class="card-image waves-effect waves-block waves-light">
-						    	<img class="activator" src="images/target-app.jpg">
+						    	<img class="activator" src="images/matrix.jpg" alt="matrix">
+						    </div>
+						    <div class="card-content">
+						    	<span class="card-title activator grey-text text-darken-4">Matrix<i class="material-icons right">info_outline</i></span>
+						    	<p><a href="http://acsweb.ucsd.edu/~sachadal/website/matrix/MatrixAnimation.html">Click to visit!</a></p>
+						    </div>
+						    <div class="card-reveal">
+						    	<span class="card-title grey-text text-darken-4">Matrix<i class="material-icons right">close</i></span>
+						    	<p>Technologies: HTML, CSS, JavaScript</p>
+						    	<p>
+						    		The Matrix animation is another one of my more favorite programs that I have written. This is because I had this idea for a couple of days. After thinking about the process that it would take, I wrote a generic version that wasn't nearly as visually appeasing.
+						    	</p>
+						    	<p>
+						    		I did some research and patched up the code and eventually got the final product. It amazes me how in the span of one week, I went from an idea to a finished product that I could dynamically change to my liking.
+						    	</p>
+						    </div>
+  						</div>
+              <div class="card col m3 proj hoverable">
+						    <div class="card-image waves-effect waves-block waves-light">
+						    	<img class="activator" src="images/target-app.jpg" alt="target-app">
 						    </div>
 						    <div class="card-content">
 						    	<span class="card-title activator grey-text text-darken-4">Food Ave.<i class="material-icons right">info_outline</i></span>
@@ -231,33 +253,14 @@
 								</p>
 						    </div>
   						</div>
-              <div class="card col m3 proj hoverable">
-						    <div class="card-image waves-effect waves-block waves-light">
-						    	<img class="activator" src="images/matrix.jpg">
-						    </div>
-						    <div class="card-content">
-						    	<span class="card-title activator grey-text text-darken-4">Matrix<i class="material-icons right">info_outline</i></span>
-						    	<p><a href="http://acsweb.ucsd.edu/~sachadal/website/matrix/MatrixAnimation.html">Click to visit!</a></p>
-						    </div>
-						    <div class="card-reveal">
-						    	<span class="card-title grey-text text-darken-4">Matrix<i class="material-icons right">close</i></span>
-						    	<p>Technologies: HTML, CSS, JavaScript</p>
-						    	<p>
-						    		The Matrix animation is another one of my more favorite programs that I have written. This is because I had this idea for a couple of days. After thinking about the process that it would take, I wrote a generic version that wasn't nearly as visually appeasing.
-						    	</p>
-						    	<p>
-						    		I did some research and patched up the code and eventually got the final product. It amazes me how in the span of one week, I went from an idea to a finished product that I could dynamically change to my liking.
-						    	</p>
-						    </div>
-  						</div>
             </div>
             <div class="row">
-              <h5><blockquote class="blue-text">Planned Projects</blockquote></h5>
+              <blockquote class="blue-text"><h5>Planned Projects</h5></blockquote>
             </div>
             <div class="row">
               <div class="card col m3 offset-m1 proj hoverable">
 						    <div class="card-image waves-effect waves-block waves-light">
-						    	<img class="activator" src="images/beep.png">
+						    	<img class="activator" src="images/beep.png" alt="beep">
 						    </div>
 						    <div class="card-content">
 						    	<span class="card-title activator grey-text text-darken-4">Beep<i class="material-icons right">info_outline</i></span>
@@ -284,7 +287,7 @@
   						</div>
               <div class="card col m3 proj hoverable">
 						    <div class="card-image waves-effect waves-block waves-light">
-						    	<img class="activator" src="images/magic-mirror.jpg">
+						    	<img class="activator" src="images/magic-mirror.jpg" alt="magic-mirror">
 						    </div>
 						    <div class="card-content">
 						    	<span class="card-title activator grey-text text-darken-4">Magic Mirror<i class="material-icons right">info_outline</i></span>
@@ -309,7 +312,7 @@
   						</div>
               <div class="card col m3 proj hoverable">
 						    <div class="card-image waves-effect waves-block waves-light">
-						    	<img class="activator" src="images/busy-blocks.png">
+						    	<img class="activator" src="images/busy-blocks.png" alt="busy-blocks-migration">
 						    </div>
 						    <div class="card-content">
 						    	<span class="card-title activator grey-text text-darken-4">Migration Project<i class="material-icons right">info_outline</i></span>
@@ -346,6 +349,7 @@
           </div>
         </div>
       </div>
+    </div>
       <!-- <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
 		    <a class="btn-floating btn-large red">
 		    	<i class="large material-icons">email</i>
