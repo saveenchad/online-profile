@@ -1,20 +1,22 @@
+"use strict";
+
 function changeTheme(newTheme) {
-  var darkClasses = 'body, .my-card-blue, .main-content, .tabs, .card, .card-reveal, .dropdown-content';
+  var darkClasses = "body, .my-card-blue, .main-content, .tabs, .card, .card-reveal, .dropdown-content";
   if(newTheme === "dark") {
-    $(darkClasses).addClass('dark');
+    $(darkClasses).addClass("dark");
   } else {
-    $(darkClasses).removeClass('dark');
+    $(darkClasses).removeClass("dark");
   }
-};
+}
 
 $(document).ready(function() {
-  // $('.email-modal-trigger').leanModal({
+  // $(".email-modal-trigger").leanModal({
   //   dismissible: false
   // });
-  $('.materialboxed').materialbox();
-  $('.parallax').parallax();
-  $('.tabs').tabs();
-  $('.tooltipped').tooltip({delay: 50});
+  $(".materialboxed").materialbox();
+  $(".parallax").parallax();
+  $(".tabs").tabs();
+  $(".tooltipped").tooltip({delay: 50});
 
   var quotes = [
     "\"Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the \"present.\" -- Anonymous",
@@ -30,20 +32,22 @@ $(document).ready(function() {
     "\"Our greatest glory is not in never falling, but in rising every time we fall.\" -- Confucius"
   ];
   var quoteIndex = Math.floor(Math.random() * quotes.length);
-  var bDate = new Date('04/27/1994'), currDate = new Date(), diff = currDate.getFullYear() - bDate.getFullYear();
+  var bDate = new Date("04/27/1994");
+  var currDate = new Date();
+  var diff = currDate.getFullYear() - bDate.getFullYear();
 
-  $('#quote').text(quotes[quoteIndex]);
-  $('#age').text(diff);
+  $("#quote").text(quotes[quoteIndex]);
+  $("#age").text(diff);
 
-  $('.tab').click(function() {
-    $('html, body').animate({scrollTop: 400}, 750);
+  $(".tab").click(function() {
+    $("html, body").animate({scrollTop: 400}, 1250);
   });
 
-  $('#themeSwitch').on('change',function(){
+  $("#themeSwitch").on("change",function(){
     if ($(this).is(":checked")) {
-      changeTheme('dark');
+      changeTheme("dark");
     } else {
-      changeTheme('light');
+      changeTheme("light");
     }
   });
 });
