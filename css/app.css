@@ -3,8 +3,8 @@ body {
 }
 
 .my-card-blue {
-	background: #2196F3;
-	color: #000;
+  background: #2196F3;
+  color: #000;
   padding: 0 20px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
   transition: background 0.5s;
@@ -17,12 +17,12 @@ img.responsive-img {
 }
 
 .name {
-	position: relative;
-	color: #FFF;
-	display: inline-block;
-	font-size: 30px;
-	padding: 0;
-	white-space: nowrap;
+  position: relative;
+  color: #FFF;
+  display: inline-block;
+  font-size: 30px;
+  padding: 0;
+  white-space: nowrap;
 }
 
 .subtitle {
@@ -46,8 +46,8 @@ img.responsive-img {
 }
 
 .main-content {
-	background: #eee;
-	color: #212121;
+  background: #eee;
+  color: #212121;
 }
 
 .tabs {
@@ -63,7 +63,7 @@ img.responsive-img {
 }
 
 .proj {
-	margin: 0 20px;
+  margin: 0 20px;
   padding: 0 !important;
 }
 
@@ -94,37 +94,37 @@ img.responsive-img {
 /* MOBILE PHONES */
 
 @media only screen and (max-width: 768px) {
-    .theme-switch, .social-menu {
-      display: none;
-    }
+  .theme-switch, .social-menu {
+    display: none;
+  }
 
-    .mobile-menu {
-      display: list-item;
-    }
+  .mobile-menu {
+    display: list-item;
+  }
 
-    .proj {
-        margin: 10px 20px;
-        padding: 0 !important;
-    }
+  .proj {
+    margin: 10px 20px;
+    padding: 0 !important;
+  }
 }
 
 @media only screen and (max-width: 470px) {
-    img.circle {
-      display: none;
-    }
+  img.circle {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 420px) {
-    .name {
-      max-width: 260px;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow-x: hidden;
-    }
+  .name {
+    max-width: 260px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+  }
 
-    .mobile-menu .dropdown-button {
-      padding: 0;
-    }
+  .mobile-menu .dropdown-button {
+    padding: 0;
+  }
 }
 
 /* DARK THEME */
@@ -142,7 +142,7 @@ body.dark, .tabs.dark {
 }
 
 .card.dark, .card-reveal.dark {
-  background: #111;
+  background: #333940;
   color: #ccc;
 }
 
@@ -151,9 +151,9 @@ body.dark, .tabs.dark {
 }
 
 .dropdown-content.dark {
-	background: #111;
+  background: #111;
 }
 
 .dropdown-content.dark li.active, .dropdown-content.dark li:hover{
-	background: #ccc;
+  background: #ccc;
 }
