@@ -1,0 +1,92 @@
+/* CSS Document */
+body {
+  background: #f5f6fa;
+}
+
+/* Font-Aweseme theming */
+.fad:before,
+.fad:after {
+  color: #60a1fb;
+}
+
+#welcome-banner {
+  background: #e7f4ff;
+}
+
+#welcome-svg {
+  max-width: 50%;
+  max-height: calc(150px - 2rem); /* banner height - (2 * padding) */
+}
+
+#profile-pic {
+  height: 115px;
+  width: 115px;
+  object-fit: cover;
+  object-position: 100% 0%;
+}
+
+#profile-tags li:not(:last-child):after {
+  content: '|';
+  margin-left: 0.5rem;
+  color: #000;
+  vertical-align: text-bottom;
+}
+
+#html-logo {
+  color: #e44d26;
+}
+
+#css-logo {
+  color: #0277bd;
+}
+
+#js-logo {
+  display: inline-flex;
+  align-items: center;
+  background: black;
+  color: #fdd83c;
+  height: 14px;
+  width: 14px;
+  border-radius: 0.25rem;
+}
+
+#skill-bar {
+  background: #60a1fb;
+}
+
+#footer {
+  background: #e7f4ff;
+}
+
+#footer-svg {
+  max-height: 150px;
+}
+
+#footer .fab:hover {
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+#footer #fb-icon:hover {
+  color: #4c66a4;
+}
+
+#footer #tw-icon:hover {
+  color: #55acee;
+}
+
+#footer #so-icon:hover {
+  color: #f48024;
+}
+
+#footer #li-icon:hover {
+  color: #2867b2;
+}
+
+#footer #gh-icon:hover {
+  color: #6e5494;
+}
+
+#footer #gl-icon:hover {
+  color: #e2434a;
+}
