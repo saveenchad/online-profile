@@ -3,12 +3,6 @@ body {
   background: #f5f6fa;
 }
 
-/* Font-Aweseme theming */
-.fad:before,
-.fad:after {
-  color: #60a1fb;
-}
-
 #welcome-banner {
   background: #e7f4ff;
 }
@@ -51,7 +45,19 @@ body {
 }
 
 #skill-bar {
-  background: #60a1fb;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+#toast-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#toast {
+  min-width: 300px;
 }
 
 #footer {
@@ -68,25 +74,34 @@ body {
 }
 
 #footer #fb-icon:hover {
-  color: #4c66a4;
+  color: #4c66a4; /* fb theme */
 }
 
 #footer #tw-icon:hover {
-  color: #55acee;
+  color: #55acee; /* twitter theme */
 }
 
 #footer #so-icon:hover {
-  color: #f48024;
+  color: #f48024; /* stack overflow theme */
 }
 
 #footer #li-icon:hover {
-  color: #2867b2;
+  color: #2867b2; /* linkedin theme */
 }
 
 #footer #gh-icon:hover {
-  color: #6e5494;
+  color: #6e5494; /* github theme */
 }
 
 #footer #gl-icon:hover {
-  color: #e2434a;
+  color: #e2434a; /* gitlab theme */
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.card-text.list {
+  padding: 0;
+  list-style-type: none;
 }
