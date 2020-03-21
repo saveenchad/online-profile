@@ -58,16 +58,16 @@
         </ul>
       </div>
     </nav>
-    <div class="card border-0 mb-3" id="welcome-banner">
-      <div class="card-body d-flex justify-content-between align-items-center">
+    <card class="card border-0 mb-3" id="welcome-banner">
+      <card-body class="card-body d-flex justify-content-between align-items-center">
         <div>
           <h5 class="card-title">Hi there!</h5>
           <p class="card-text">Welcome to my personal portfolio website.</p>
           <div class="btn btn-outline-primary">Contact Me</div>
         </div>
         <img alt="welcome image" height="auto" id="welcome-svg" src="images/svg/developer-activity.svg" />
-      </div>
-    </div>
+      </card-body>
+    </card>
     <card class="card border-0 mb-3">
       <card-body class="card-body d-flex align-items-center">
         <img alt="profile pic" class="border rounded-circle" id="profile-pic" src="images/profile-pic.jpg" />
@@ -96,23 +96,36 @@
       </card-body>
     </card>
     <section>
-      <div class="container">
-        <div class="row">
-          <column class="col-md-6 col-12">
-            <card class="card border-0 mb-3">
-              <div class="card-body">
+      <container class="container">
+        <row class="row">
+          <column class="col-md-6 col-12 mb-3">
+            <card class="card border-0 h-100">
+              <div class="card-body d-flex flex-column">
                 <h5 class="card-title">About Me</h5>
-                <p class="card-text">
-                  <div>Born & raised in San Diego.</div>
-                  <div>Love to explore and try new food.</div>
-                  <div>I like playing video games.</div>
-                </p>
+                <ul class="card-text list my-2">
+                  <li>
+                    <i class="fad fa-umbrella-beach fa-fw text-primary"></i>
+                    <span>Born & raised in San Diego.</span>
+                  </li>
+                  <li>
+                    <i class="fad fa-binoculars fa-fw text-primary"></i>
+                    <span>Love to explore and try new food.</span>
+                  </li>
+                  <li>
+                    <i class="fad fa-joystick fa-fw text-primary"></i>
+                    <span>I like playing video games.</span>
+                  </li>
+                  <li>
+                    <i class="fad fa-racquet fa-fw text-primary"></i>
+                    <span>Casual tennis player in my free time.</span>
+                  </li>
+                </ul>
                 <a href="./about-me.html" class="card-link">Read more</a>
               </div>
             </card>
           </column >
-          <column class="col-md-6 col-12">
-            <card class="card border-0 mb-3">
+          <column class="col-md-6 col-12 mb-3">
+            <card class="card border-0">
               <card-body class="card-body">
                 <h5 class="card-title">Resume</h5>
                 <p class="card-text">
@@ -135,8 +148,8 @@
               </card-body>
             </card>
           </column >
-        </div>
-      </div>
+        </row>
+      </container>
     </section>
     <section>
       <card class="card border-0 mb-3">
@@ -145,21 +158,22 @@
           <row class="row mb-3">
             <column class="col-4">
               <i class="fab fa-html5" id="html-logo"></i>
-              <span class="font-weight-bold">HTML</span>
+              <strong>HTML</strong>
               <div class="progress skill-bar">
                 <div class="progress-bar" style="width: 100%;">proficient</div>
               </div>
             </column >
             <column class="col-4">
               <i class="fab fa-css3" id="css-logo"></i>
-              <span class="font-weight-bold">CSS</span>
+              <strong>CSS</strong>
               <div class="progress skill-bar">
                 <div class="progress-bar" style="width: 100%;">proficient</div>
               </div>
             </column >
             <column class="col-4">
               <i class="fab fa-js-square" id="js-logo"></i>
-              <span class="font-weight-bold">JavaScript</span>
+              <strong class="d-none d-md-inline-block">JavaScript</strong>
+              <strong class="d-sm-inline-block d-md-none">JS</strong>
               <div class="progress skill-bar">
                 <div class="progress-bar" style="width: 100%;">proficient</div>
               </div>

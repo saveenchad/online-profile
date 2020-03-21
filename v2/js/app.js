@@ -30,11 +30,17 @@ $(document).ready(() => {
     }
   });
 
-  $(".collapse-title").on("click", (event) => {
-    const chevron = $(event.target).children(".fad");
+  $(".collapse-title, .collapse-title *").on("click", (event) => {
+    const { currentTarget, target } = event;
 
-    if (chevron) {
-      chevron.toggleClass("fa-rotate-180");
+    // skip rotate icon on bubbled events
+    if (currentTarget === target) {
+      const container = $(target).closest(".collapse-title");
+      const chevron = $(container).children(".fad");
+
+      if (chevron) {
+        chevron.toggleClass("fa-rotate-180");
+      }
     }
   });
 
