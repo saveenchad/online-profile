@@ -3,6 +3,11 @@ body {
   background: #f5f6fa;
 }
 
+/* semantic elements */
+container, card, card-body, row, column {
+  display: block;
+}
+
 #welcome-banner {
   background: #e7f4ff;
 }
@@ -44,10 +49,15 @@ body {
   border-radius: 0.25rem;
 }
 
-#skill-bar {
+.skill-bar {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 10px;
+}
+
+.no-skill {
+  flex: 1;
+  text-align: center;
 }
 
 #toast-container {
@@ -104,4 +114,16 @@ body {
 .card-text.list {
   padding: 0;
   list-style-type: none;
+}
+
+.collapse-title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.collapse-title .fad {
+  transition: transform 0.35s ease;
 }

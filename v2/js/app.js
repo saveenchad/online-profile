@@ -30,6 +30,14 @@ $(document).ready(() => {
     }
   });
 
+  $(".collapse-title").on("click", (event) => {
+    const chevron = $(event.target).children(".fad");
+
+    if (chevron) {
+      chevron.toggleClass("fa-rotate-180");
+    }
+  });
+
   if (onAboutMePage) {
     const quotes = Object.entries({
       "C.S. Lewis": "You can't go back and change the beginning, but you can start where you are and change the ending.",

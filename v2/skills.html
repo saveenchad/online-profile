@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saveen Chadalawada</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.4.1.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="css/fontawesome.min.css" rel="stylesheet" />
+  <link href="css/font-awesome-brands.min.css" rel="stylesheet" />
+  <link href="css/font-awesome-duotone.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link href="css/app.css" rel="stylesheet" />
+</head>
+
+<body>
+  <container class="container">
+    <nav class="navbar navbar-light navbar-expand-lg">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <div class="btn btn-outline-dark btn-sm font-weight-bold">SC</div>
+        <span class="mx-3">Saveen Chadalawada</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
+        aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbar-menu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about-me.html">About Me</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              Skills
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <card class="card border-0 mb-3" id="welcome-banner">
+      <card-body class="card-body d-flex justify-content-between align-items-center">
+        <div>
+          <h5 class="card-title">Skills</h5>
+          <p class="card-text">Explore my experiences and see the technologies I prefer to use.</p>
+          <div class="btn btn-outline-primary">Contact Me</div>
+        </div>
+        <img alt="welcome image" height="auto" id="welcome-svg" src="images/svg/skills.svg" />
+      </card-body>
+    </card>
+    <section>
+      <card class="card border-0 mb-3">
+        <card-body class="card-body">
+          <h5 class="card-title collapse-title" data-toggle="collapse" data-target="#ml-skills">
+            <span>Layout</span>
+            <i class="text-primary fad fa-chevron-down fa-rotate-180" data-toggle="tooltip" title="Toggle"></i>
+          </h5>
+          <div class="collapse show" id="ml-skills">
+            <container class="container">
+              <row class="row">
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">HTML</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar bg-success" style="width: 100%;">proficient</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">XML</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 80%;">competent</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">EJS</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 20%;">novice</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+              </row>
+            </container>
+          </div>
+        </card-body>
+      </card>
+    </section>
+    <section>
+      <card class="card border-0 mb-3">
+        <card class="card-body">
+          <h5 class="card-title collapse-title" data-toggle="collapse" data-target="#css-skills">
+            <span>Styling</span>
+            <i class="text-primary fad fa-chevron-down fa-rotate-180" data-toggle="tooltip" title="Toggle"></i>
+          </h5>
+          <div class="collapse show" id="css-skills">
+            <container class="container">
+              <row class="row">
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">CSS</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar bg-success" style="width: 100%;">proficient</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">SCSS</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar bg-success" style="width: 100%;">proficient</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">LESS</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 0%;"></div>
+                        <span class="no-skill">want to learn</span>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">MaterializeCSS</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 80%;">competent</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+              </row>
+            </container>
+          </div>
+        </card-body>
+      </card>
+    </section>
+    <section>
+      <card class="card border-0 mb-3">
+        <card-body class="card-body">
+          <h5 class="card-title collapse-title" data-toggle="collapse" data-target="#js-skills">
+            <span>Functionality</span>
+            <i class="text-primary fad fa-chevron-down fa-rotate-180" data-toggle="tooltip" title="Toggle"></i>
+          </h5>
+          <div class="collapse show" id="js-skills">
+            <container class="container">
+              <row class="row">
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">JavaScript (ES6)</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar bg-success" style="width: 100%;">proficient</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">jQuery</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar bg-success" style="width: 80%;">proficient</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">NodeJS/NPM</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 50%;">skilled</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Lodash</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 80%;">competent</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Jest</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 80%;">competent</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">PHP</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 20%;">beginner</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Redux</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar bg-success" style="width: 100%;">proficient</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+              </row>
+            </container>
+          </div>
+        </card-body>
+      </card>
+    </section>
+    <section>
+      <card class="card border-0 mb-3">
+        <card-body class="card-body">
+          <h5 class="card-title collapse-title" data-toggle="collapse" data-target="#library-skills">
+            <span>UI Frameworks & Libraries</span>
+            <i class="text-primary fad fa-chevron-down fa-rotate-180" data-toggle="tooltip" title="Toggle"></i>
+          </h5>
+          <div class="collapse show" id="library-skills">
+            <container class="container">
+              <row class="row">
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">React</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar bg-success" style="width: 100%;">proficient</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">AngularJS</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 80%;">competent</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Angular</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 0%;"></div>
+                        <span class="no-skill">want to learn</span>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Bootstrap</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar bg-success" style="width: 100%;">proficient</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Material-UI</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar bg-success" style="width: 100%;">proficient</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Foundation</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 20%;">beginner</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">ChartJS</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 80%;">competent</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">D3</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 0%;"></div>
+                        <span class="no-skill">want to learn</span>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">ThreeJS</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 0%;"></div>
+                        <span class="no-skill">want to learn</span>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">CesiumJS</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 80%;">competent</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Golden Layout</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 50%;">skilled</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+              </row>
+            </container>
+          </div>
+        </card-body>
+      </card>
+    </section>
+    <section>
+      <card class="card border-0 mb-3">
+        <card-body class="card-body">
+          <h5 class="card-title collapse-title" data-toggle="collapse" data-target="#misc-skills">
+            <span>Misc. Technologies</span>
+            <i class="text-primary fad fa-chevron-down fa-rotate-180" data-toggle="tooltip" title="Toggle"></i>
+          </h5>
+          <div class="collapse show" id="misc-skills">
+            <container class="container">
+              <row class="row">
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Webpack</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 80%;">competent</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Gulp</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 50%;">skilled</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">StorybookJS</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 20%;">beginner</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Typescript</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 80%;">competent</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">FontAwesome</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar bg-success" style="width: 100%;">proficient</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Progressive Web App</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 80%;">competent</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Service Workers</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 20%;">beginner</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Git</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar bg-success" style="width: 100%;">proficient</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">UX Process</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 80%;">competent</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Axure</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 80%;">competent</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">Figma</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 80%;">competent</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+                <column class="col-sm-12 col-md-4 mb-2">
+                  <row class="row">
+                    <skill-name class="col-12">
+                      <span class="font-weight-bold">DreamWeaver</span>
+                    </skill-name>
+                    <skill-progress class="col-12">
+                      <div class="progress skill-bar">
+                        <div class="progress-bar" style="width: 50%;">skilled</div>
+                      </div>
+                    </skill-progress>
+                  </row>
+                </column>
+              </row>
+            </container>
+          </div>
+        </card-body>
+      </card>
+    </section>
+  </container>
+  <footer id="footer" class="py-2">
+    <container class="container">
+      <row class="row d-flex">
+        <img alt="footer image" class="col-4" height="auto" id="footer-svg" src="images/svg/web-developer-1.svg"
+          width="200" />
+        <column class="col-8">
+          <h5>Thanks for visiting!</h5>
+          <h6>You can also find me on</h6>
+          <column class="col-md-8 col-sm-12 p-0 d-flex justify-content-between fa fa-2x">
+            <div data-toggle="tooltip" title="Facebook"><i id="fb-icon" class="fab fa-facebook"></i></div>
+            <div data-toggle="tooltip" title="Twitter"><i id="tw-icon" class="fab fa-twitter"></i></div>
+            <div data-toggle="tooltip" title="Stack Overflow"><i id="so-icon" class="fab fa-stack-overflow"></i></div>
+            <div data-toggle="tooltip" title="LinkedIn"><i id="li-icon" class="fab fa-linkedin"></i></div>
+            <div data-toggle="tooltip" title="Github"><i id="gh-icon" class="fab fa-github"></i></div>
+            <div data-toggle="tooltip" title="GitLab"><i id="gl-icon" class="fab fa-gitlab"></i></div>
+          </column>
+        </column>
+      </row>
+    </container>
+  </footer>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
