@@ -4,7 +4,7 @@ body {
 }
 
 /* semantic elements */
-container, card, card-body, row, column {
+container, card, card-body, row, column, form-row, form-group {
   display: block;
 }
 
@@ -22,13 +22,6 @@ container, card, card-body, row, column {
   width: 115px;
   object-fit: cover;
   object-position: 100% 0%;
-}
-
-#profile-tags li:not(:last-child):after {
-  content: '|';
-  margin-left: 0.5rem;
-  color: #000;
-  vertical-align: text-bottom;
 }
 
 #html-logo {

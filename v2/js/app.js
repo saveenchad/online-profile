@@ -1,48 +1,10 @@
 // JavaScript Document
 $(document).ready(() => {
-  const onAboutMePage = Boolean($("#quote").length) && Boolean($("#source").length);
+  const onAboutMePage = Boolean($("#about-me-page").length);
+  const onSkillsPage = Boolean($("#skills-page").length);
+  const onContactPage = Boolean($("#contact-page").length);
 
   $('[data-toggle="tooltip"]').tooltip();
-
-  $("#ttaal-submit").on("click", () => {
-    const opt1 = $("#opt-1")[0].checked;
-    const opt2 = $("#opt-2")[0].checked;
-    const opt3 = $("#opt-3")[0].checked;
-    const noOptSelected = !opt1 && !opt2 && !opt3;
-
-    if (!noOptSelected) {
-      const toast = $("#toast");
-      const toastType = $("#toast-type");
-      const toastTitle = $("#toast-title");
-      const toastMsg = $("#toast-msg");
-
-      if (opt1) {
-        toastType.html('<i class="fad fa-check text-success"></i>');
-        toastTitle.html("Congrats!");
-        toastMsg.html("You found the lie! This is still on my bucket list!");
-      } else if (opt2 || opt3) {
-        toastType.html('<i class="fad fa-times text-danger"></i>');
-        toastTitle.html("Guess again");
-        toastMsg.html("This is actually a truth!");
-      }
-
-      toast.toast("show");
-    }
-  });
-
-  $(".collapse-title, .collapse-title *").on("click", (event) => {
-    const { currentTarget, target } = event;
-
-    // skip rotate icon on bubbled events
-    if (currentTarget === target) {
-      const container = $(target).closest(".collapse-title");
-      const chevron = $(container).children(".fad");
-
-      if (chevron) {
-        chevron.toggleClass("fa-rotate-180");
-      }
-    }
-  });
 
   if (onAboutMePage) {
     const quotes = Object.entries({
@@ -58,5 +20,70 @@ $(document).ready(() => {
 
     $("#quote").html(quote);
     $("#source").html(source);
+
+    $("#ttaal-submit").on("click", () => {
+      const opt1 = $("#opt-1")[0].checked;
+      const opt2 = $("#opt-2")[0].checked;
+      const opt3 = $("#opt-3")[0].checked;
+      const noOptSelected = !opt1 && !opt2 && !opt3;
+
+      if (!noOptSelected) {
+        const toast = $("#toast");
+        const toastType = $("#toast-type");
+        const toastTitle = $("#toast-title");
+        const toastMsg = $("#toast-msg");
+
+        if (opt1) {
+          toastType.html('<i class="fad fa-check text-success"></i>');
+          toastTitle.html("Congrats!");
+          toastMsg.html("You found the lie! This is still on my bucket list!");
+        } else if (opt2 || opt3) {
+          toastType.html('<i class="fad fa-times text-danger"></i>');
+          toastTitle.html("Guess again");
+          toastMsg.html("This is actually a truth!");
+        }
+
+        toast.toast("show");
+      }
+    });
+  }
+
+  if (onSkillsPage) {
+    $(".collapse-title, .collapse-title *").on("click", (event) => {
+      const { currentTarget, target } = event;
+
+      // skip rotate icon on bubbled events
+      if (currentTarget === target) {
+        const container = $(target).closest(".collapse-title");
+        const chevron = $(container).children(".fad");
+
+        if (chevron) {
+          chevron.toggleClass("fa-rotate-180");
+        }
+      }
+    });
+  }
+
+  if (onContactPage) {
+    const contactMeForm = $("#contact-me-form");
+
+    contactMeForm.on("submit", (event) => {
+      if (contactMeForm[0].checkValidity()) {
+        const alert = $("#success-alert");
+        
+        alert.removeClass("d-none");
+        alert.addClass("show");
+      }
+
+      event.preventDefault();
+      event.stopPropagation();
+      contactMeForm.addClass("was-validated");
+    });
+
+    // grecaptcha.ready(() => {
+    //   grecaptcha.execute('6LdlBOMUAAAAAHSmd6SWtjdstMO1RmHlzgkSmqn4', { action: 'contact-me' }).then(token => {
+    //       ...
+    //   });
+    // });
   }
 });
