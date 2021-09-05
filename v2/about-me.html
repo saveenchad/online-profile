@@ -17,16 +17,22 @@
   <link href="css/fontawesome.min.css" rel="stylesheet" />
   <link href="css/font-awesome-brands.min.css" rel="stylesheet" />
   <link href="css/font-awesome-duotone.min.css" rel="stylesheet" />
-  <!-- Custom CSS -->
+  <!-- My CSS -->
   <link href="css/app.css" rel="stylesheet" />
 </head>
 
 <body>
-  <container class="container" id="about-me-page">
+  <div class="container" id="about-me-page">
     <nav class="navbar navbar-light navbar-expand-lg px-0">
       <div class="d-flex flex-nowrap flex-grow-1">
         <a class="navbar-brand d-flex align-items-center flex-grow-1" href="./index.html">
-          <div class="btn btn-outline-dark btn-sm font-weight-bold">SC</div>
+          <div class="btn btn-outline-light btn-sm font-weight-bold">
+            <span class="logo angle-brackets min-space">&lt;</span>
+            <span class="logo initial min-space">S</span>
+            <span class="logo initial min-space">C</span>
+            <span class="logo slash min-space">/</span>
+            <span class="logo angle-brackets">&gt;</span>
+          </div>
           <span class="mx-3">Saveen Chadalawada</span>
         </a>
         <button class="navbar-toggler p-1" type="button" data-toggle="collapse" data-target="#navbar-menu"
@@ -57,31 +63,34 @@
         </ul>
       </div>
     </nav>
-    <card class="card border-0 mb-3" id="welcome-banner">
-      <card-body class="card-body d-flex justify-content-between align-items-center">
+    <div class="card border-0 mb-3" id="welcome-banner">
+      <div class="card-body d-flex justify-content-between align-items-center">
         <div>
           <h5 class="card-title">About me</h5>
           <p class="card-text">Get to know more about me and what I'm interested in.</p>
           <a class="btn btn-outline-primary" href="./contact-me.html">Contact Me</a>
         </div>
         <img alt="welcome image" height="auto" id="welcome-svg" src="images/svg/profile.svg" />
-      </card-body>
-    </card>
-    <card class="card border-0 mb-3">
-      <card-body class="card-body">
-        <h5 class="card-title">A quote that motivates me</h5>
+      </div>
+    </div>
+    <div class="card border-0 mb-3">
+      <div class="card-body">
+        <h5 class="card-title d-flex">
+          <span>A quote that motivates me</span>
+          <i class="text-primary fad fa-sync-alt ml-auto" data-toggle="tooltip" id="refresh-quote" title="Refresh quote"></i>
+        </h5>
         <blockquote class="blockquote">
           <p class="mb-0" id="quote"></p>
           <footer class="blockquote-footer"><cite id="source"></cite></footer>
         </blockquote>
-      </card-body>
-    </card>
+      </div>
+    </div>
     <section>
-      <container class="container">
-        <row class="row">
-          <column class="col-lg-6 col-12 mb-3 px-2">
-            <card class="card border-0">
-              <card-body class="card-body">
+      <div class="container">
+        <div class="row">
+          <div class="column col-lg-6 col-12 mb-3 px-2">
+            <div class="card border-0">
+              <div class="card-body">
                 <h5 class="card-title">Education</h5>
                 <ul class="card-text list">
                   <li>
@@ -95,7 +104,7 @@
                   </li>
                   <li>
                     <span class="badge badge-info" data-toggle="tooltip" title="University of California, San Diego Extension">UCSD Ext.</span>
-                    <span class="badge badge-primary">in-progress</span>
+                    <span class="badge badge-primary">2019 - 2021</span>
                     <span>
                       <span class="d-none d-md-inline-block">User Experience</span>
                       <span class="d-sm-inline-block d-md-none">UX</span>
@@ -130,17 +139,22 @@
                     </span>
                   </li>
                 </ul>
-              </card-body>
-            </card>
-          </column>
-          <column class="col-lg-6 col-12 mb-3 px-2">
-            <card class="card border-0 h-100">
-              <card-body class="card-body">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 mb-3 px-2">
+            <div class="card border-0 h-100">
+              <div class="card-body">
                 <h5 class="card-title">Work Experience</h5>
                 <ul class="card-text list">
                   <li>
+                    <span class="badge badge-info">Hopper Inc.</span>
+                    <span class="badge badge-primary">2021 - present</span>
+                    <span>Senior Software Engineer</span>
+                  </li>
+                  <li>
                     <span class="badge badge-info">BAE Systems, Inc.</span>
-                    <span class="badge badge-primary">2015 - current</span>
+                    <span class="badge badge-primary">2015 - 2021</span>
                     <span>Front-End Software Engineer</span>
                   </li>
                   <li>
@@ -154,18 +168,18 @@
                     <span>Food Ave. Team Member / Cashier</span>
                   </li>
                 </ul>
-              </card-body>
-            </card>
-          </column>
-        </row>
-      </container>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section>
-      <container class="container">
-        <row class="row">
-          <column class="col-md-4 col-12 mb-3 px-2">
-            <card class="card border-0">
-              <card-body class="card-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12 mb-3 px-2">
+            <div class="card border-0">
+              <div class="card-body">
                 <h5 class="card-title">Hobbies</h5>
                 <ul class="card-text list">
                   <li>
@@ -190,7 +204,7 @@
                   </li>
                   <li>
                     <i class="fad fa-rocket-launch fa-fw text-primary"></i>
-                    <span>Watching SpaceX rocket launches</span>
+                    <span>Watching rocket launches</span>
                   </li>
                   <li>
                     <i class="fad fa-sparkles fa-fw text-primary"></i>
@@ -201,12 +215,12 @@
                     <span>Being creative</span>
                   </li>
                 </ul>
-              </card-body>
-            </card>
-          </column>
-          <column class="col-md-4 col-12 mb-3 px-2">
-            <card class="card border-0">
-              <card-body class="card-body">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 mb-3 px-2">
+            <div class="card border-0">
+              <div class="card-body">
                 <h5 class="card-title">Favorites</h5>
                 <ul class="card-text list">
                   <li>
@@ -242,51 +256,46 @@
                     <span>The Greatest Showman, 2017</span>
                   </li>
                 </ul>
-              </card-body>
-            </card>
-          </column>
-          <column class="col-md-4 col-12 mb-3 px-2">
-            <card class="card border-0">
-              <card-body class="card-body">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 mb-3 px-2">
+            <div class="card border-0">
+              <div class="card-body">
                 <h5 class="card-title">Two Truths & A lie</h5>
                 <h6 class="card-subtitle text-muted mb-2">Can you guess the lie?</h6>
                 <div id="ttaal-container" class="card-text">
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="ttaal" id="opt-1" value="opt-1">
-                    <label class="form-check-label" for="opt-1">
-                      I've seen the northern lights (aurora borealis) in person.
-                    </label>
+                    <label class="form-check-label" for="opt-1" id="opt1-label" />
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="ttaal" id="opt-2" value="opt-2">
-                    <label class="form-check-label" for="opt-2">
-                      I have a degree in underwater basketweaving.
-                    </label>
+                    <label class="form-check-label" for="opt-2" id="opt2-label" />
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="ttaal" id="opt-3" value="opt-3">
-                    <label class="form-check-label" for="opt-3">
-                      I lived aboard an active submarine.
-                    </label>
+                    <label class="form-check-label" for="opt-3" id="opt3-label" />
                   </div>
                 </div>
+                <button class="btn btn-outline-primary btn-sm" id="refresh-ttaal">Refresh</button>
                 <button class="btn btn-primary btn-sm float-right" id="ttaal-submit">Submit Guess</button>
-              </card-body>
-            </card>
-          </column>
-        </row>
-      </container>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-  </container>
+  </div>
   <footer id="footer" class="py-2">
-    <container class="container">
-      <row class="row d-flex">
+    <div class="container">
+      <div class="row d-flex">
         <img alt="footer image" class="col-4" height="auto" id="footer-svg" src="images/svg/web-developer-1.svg"
           width="200" />
-        <column class="col-8">
+        <div class="col-8">
           <h5>Thanks for visiting!</h5>
           <h6>You can also find me on</h6>
-          <column class="col-md-8 col-sm-12 d-flex justify-content-between fa fa-2x">
+          <div class="col-md-8 col-sm-12 d-flex justify-content-between fa fa-2x">
             <a class="text-dark" data-toggle="tooltip" href="https://www.facebook.com/saveen.chadalawada" target="_blank"
               title="Facebook"><i id="fb-icon" class="fab fa-facebook"></i></a>
             <a class="text-dark" data-toggle="tooltip" href="https://twitter.com/saveenchad" target="_blank" title="Twitter"><i
@@ -299,10 +308,10 @@
                 id="gh-icon" class="fab fa-github"></i></a>
             <a class="text-dark" data-toggle="tooltip" href="https://gitlab.com/saveenchad1" target="_blank" title="GitLab"><i
                 id="gl-icon" class="fab fa-gitlab"></i></a>
-          </column>
-        </column>
-      </row>
-    </container>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
   <div id="toast-container" class="m-2">
     <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000">
@@ -317,11 +326,12 @@
     </div>
   </div>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- jQuery (Bootstrap dependency) -->
   <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap JS -->
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap-4.4.1.min.js"></script>
+  <!-- My JS -->
   <script src="js/app.js"></script>
 </body>
 

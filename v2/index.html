@@ -22,11 +22,17 @@
 </head>
 
 <body>
-  <container class="container" id="home-page">
+  <div class="container" id="home-page">
     <nav class="navbar navbar-light navbar-expand-lg px-0">
       <div class="d-flex flex-nowrap flex-grow-1">
         <a class="navbar-brand d-flex align-items-center flex-grow-1" href="./index.html">
-          <div class="btn btn-outline-dark btn-sm font-weight-bold">SC</div>
+          <div class="btn btn-outline-light btn-sm font-weight-bold">
+            <span class="logo angle-brackets min-space">&lt;</span>
+            <span class="logo initial min-space">S</span>
+            <span class="logo initial min-space">C</span>
+            <span class="logo slash min-space">/</span>
+            <span class="logo angle-brackets">&gt;</span>
+          </div>
           <span class="mx-3">Saveen Chadalawada</span>
         </a>
         <button class="navbar-toggler p-1" type="button" data-toggle="collapse" data-target="#navbar-menu"
@@ -57,18 +63,18 @@
         </ul>
       </div>
     </nav>
-    <card class="card border-0 mb-3" id="welcome-banner">
-      <card-body class="card-body d-flex justify-content-between align-items-center">
+    <div class="card border-0 mb-3" id="welcome-banner">
+      <div class="card-body d-flex justify-content-between align-items-center">
         <div>
           <h5 class="card-title">Hi there!</h5>
           <p class="card-text">Welcome to my personal portfolio website.</p>
           <a class="btn btn-outline-primary" href="./contact-me.html">Contact Me</a>
         </div>
         <img alt="welcome image" height="auto" id="welcome-svg" src="images/svg/developer-activity.svg" />
-      </card-body>
-    </card>
-    <card class="card border-0 mb-3">
-      <card-body class="card-body d-flex align-items-center">
+      </div>
+    </div>
+    <div class="card border-0 mb-3">
+      <div class="card-body d-flex align-items-center">
         <img alt="profile pic" class="border rounded-circle" id="profile-pic" src="images/profile-pic.jpg" />
         <div class="d-flex flex-column justify-content-around flex-grow-1 pl-4">
           <h5 class="card-title">Front-End Software Engineer & User Experience Developer</h5>
@@ -76,33 +82,33 @@
           <ul class="list-inline text-muted row w-100 mb-0" id="profile-tags">
             <li class="col-md-auto col-12">
               <i class="fad fa-map-marker-alt text-primary"></i>
-              <span>San Diego, CA</span>
+              <span>Baton Rouge, LA</span>
             </li>
             <li class="col-md-auto col-12">
               <i class="fad fa-birthday-cake text-primary"></i>
-              <span>25 years old</span>
+              <span id="age" />
             </li>
             <li class="col-md-auto col-12">
               <i class="fad fa-briefcase text-primary"></i>
-              <span>3 years full time</span>
+              <span id="ft-exp" />
               <span class="d-none d-md-inline-block">experience</span>
               <span class="d-sm-inline-block d-md-none">exp.</span>
             </li>
             <li class="col-md-auto col-12">
               <i class="fad fa-browser text-primary"></i>
-              <span>7 years total</span>
+              <span id="total-exp" />
               <span class="d-none d-md-inline-block">experience</span>
               <span class="d-sm-inline-block d-md-none">exp.</span>
             </li>
           </ul>
         </div>
-      </card-body>
-    </card>
+      </div>
+    </div>
     <section>
-      <container class="container">
-        <row class="row">
-          <column class="col-md-6 col-12 mb-3">
-            <card class="card border-0 h-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12 mb-3">
+            <div class="card border-0 h-100">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">About Me</h5>
                 <ul class="card-text list my-2">
@@ -125,120 +131,115 @@
                 </ul>
                 <a href="./about-me.html" class="card-link">Read more</a>
               </div>
-            </card>
-          </column >
-          <column class="col-md-6 col-12 mb-3">
-            <card class="card border-0">
-              <card-body class="card-body">
+            </div>
+          </div >
+          <div class="col-md-6 col-12 mb-3">
+            <div class="card border-0">
+              <div class="card-body">
                 <h5 class="card-title">Resume</h5>
                 <p class="card-text">
+                  <div><strong>Hopper Inc.</strong></div>
+                  <div>
+                    <span class="badge badge-primary">2021 - present</span>
+                    <span class="d-none d-md-inline-block">Senior Software Engineer</span>
+                    <span class="d-sm-inline-block d-md-none">SW Eng Sr</span>
+                  </div>
                   <div><strong>BAE Systems, Inc.</strong></div>
                   <div>
-                    <span class="badge badge-primary">2018 - present</span>
-                    <span data-toggle="tooltip" data-html="true" title="Engineering Leadership Development Program<br/>Year 2">ELDP II</span>
+                    <span class="badge badge-primary">2017 - 2021</span>
+                    <span data-toggle="tooltip" data-html="true" title="Engineering Leadership Development Program">ELDP Grad</span>
                     <span>&</span>
-                    <span class="d-none d-md-inline-block">Software Engineer II</span>
-                    <span class="d-sm-inline-block d-md-none">SW Eng II</span>
-                  </div>
-                  <div>
-                    <span class="badge badge-primary">2017 - 2018</span>
-                    <span class="d-none d-md-inline-block">Software Engineer I</span>
-                    <span class="d-sm-inline-block d-md-none">SW Eng I</span>
-                  </div>
-                  <div>
-                    <span class="badge badge-primary">2015 - 2017</span>
-                    <span>Technical Intern,</span>
-                    <span class="d-none d-md-inline-block">Software Engineer</span>
-                    <span class="d-sm-inline-block d-md-none">SW Eng</span>
+                    <span class="d-none d-md-inline-block">Software Engineer Sr</span>
+                    <span class="d-sm-inline-block d-md-none">SW Eng Sr</span>
                   </div>
                 </p>
-                <a href="#" class="card-link">See more </a>
-              </card-body>
-            </card>
-          </column >
-        </row>
-      </container>
+                <a href="./about-me.html" class="card-link">See more </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section>
-      <card class="card border-0 mb-3">
-        <card-body class="card-body">
+      <div class="card border-0 mb-3">
+        <div class="card-body">
           <h5 class="card-title">Skills</h5>
-          <row class="row mb-3">
-            <column class="col-4">
+          <div class="row mb-3">
+            <div class="col-4">
               <i class="fab fa-html5" id="html-logo"></i>
               <strong>HTML</strong>
               <div class="progress skill-bar">
                 <div class="progress-bar" style="width: 100%;">proficient</div>
               </div>
-            </column >
-            <column class="col-4">
+            </div >
+            <div class="col-4">
               <i class="fab fa-css3" id="css-logo"></i>
               <strong>CSS</strong>
               <div class="progress skill-bar">
                 <div class="progress-bar" style="width: 100%;">proficient</div>
               </div>
-            </column >
-            <column class="col-4">
+            </div >
+            <div class="col-4">
               <i class="fab fa-js-square" id="js-logo"></i>
               <strong class="d-none d-md-inline-block">JavaScript</strong>
               <strong class="d-sm-inline-block d-md-none">JS</strong>
               <div class="progress skill-bar">
                 <div class="progress-bar" style="width: 100%;">proficient</div>
               </div>
-            </column >
-          </row>
+            </div >
+          </div>
           <a href="./skills.html" class="card-link">See full skill tree</a>
-        </card-body>
-      </card>
+        </div>
+      </div>
     </section>
     <section>
-      <container class="container">
-        <row class="row">
-          <column class="col-md-4 col-12">
-            <card class="card border-0 mb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div class="card border-0 mb-3">
               <img alt="BEEP project" class="card-img-top" src="./images/beep.png" />
-              <card-body class="card-body">
+              <div class="card-body">
                 <h5 class="card-title">BEEP Project</h5>
                 <h6 class="card-subtitle text-muted mb-2">Smart Parking Lot Solution</h6>
                 <p class="card-text">College class project in which my team and I got practice exercising the UX process.</p>
                 <a href="https://medium.com/@beepucsd" class="card-link">Read blog</a>
-              </card-body>
-            </card>
-          </column >
-          <column class="col-md-4 col-12">
-            <card class="card border-0 mb-3">
+              </div>
+            </div>
+          </div >
+          <div class="col-md-4 col-12">
+            <div class="card border-0 mb-3">
               <img alt="Busy Blocks project" class="card-img-top" src="./images/busy-blocks.png" />
-              <card-body class="card-body">
+              <div class="card-body">
                 <h5 class="card-title">Busy Blocks</h5>
                 <h6 class="card-subtitle text-muted mb-2">Group Calendar Solution</h6>
                 <p class="card-text">College class project in which my team and I practiced agile methodology and built a group calendar app from scratch. We won 3rd place out of 16 teams.</p>
                 <a href="https://www.youtube.com/watch?v=pRWh3QA9OtI" class="card-link">Watch video</a>
-              </card-body>
-            </card>
-          </column >
-          <column class="col-md-4 col-12">
-            <card class="card border-0 mb-3">
+              </div>
+            </div>
+          </div >
+          <div class="col-md-4 col-12">
+            <div class="card border-0 mb-3">
               <img alt="Matrix project" class="card-img-top" src="./images/matrix.jpg" />
-              <card-body class="card-body">
+              <div class="card-body">
                 <h5 class="card-title">Matrix Animation</h5>
-                <h6 class="card-subtitle text-muted mb-2"></h6>
+                <h6 class="card-subtitle text-muted mb-2">JS Canvas Practice App</h6>
                 <p class="card-text">A fun little animation to practice HTML, CSS, and canvas rendering skills.</p>
-                <a href="http://acsweb.ucsd.edu/~sachadal/website/matrix/MatrixAnimation.html" class="card-link">Visit app</a>
-              </card-body>
-            </card>
-          </column>
-        </row>
-      </container>
+                <!-- <a href="http://acsweb.ucsd.edu/~sachadal/website/matrix/MatrixAnimation.html" class="card-link">Visit app</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-  </container>
+  </div>
   <footer id="footer" class="py-2">
-    <container class="container">
-      <row class="row d-flex">
+    <div class="container">
+      <div class="row d-flex">
         <img alt="footer image" class="col-4" height="auto" id="footer-svg" src="images/svg/web-developer-1.svg"  width="200"/>
-        <column class="col-8">
+        <div class="col-8">
           <h5>Thank you for visiting!</h5>
           <h6>You can also find me on</h6>
-          <column class="col-md-8 col-sm-12 d-flex justify-content-between fa fa-2x">
+          <div class="col-md-8 col-sm-12 d-flex justify-content-between fa fa-2x">
             <a class="text-dark" data-toggle="tooltip" href="https://www.facebook.com/saveen.chadalawada" target="_blank"
               title="Facebook"><i id="fb-icon" class="fab fa-facebook"></i></a>
             <a class="text-dark" data-toggle="tooltip" href="https://twitter.com/saveenchad" target="_blank" title="Twitter"><i
@@ -251,17 +252,18 @@
                 id="gh-icon" class="fab fa-github"></i></a>
             <a class="text-dark" data-toggle="tooltip" href="https://gitlab.com/saveenchad1" target="_blank" title="GitLab"><i
                 id="gl-icon" class="fab fa-gitlab"></i></a>
-          </column>
-        </column>
-      </row>
-    </container>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- jQuery (Bootstrap dependency) -->
   <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap JS -->
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap-4.4.1.min.js"></script>
+  <!-- My JS -->
   <script src="js/app.js"></script>
 </body>
 

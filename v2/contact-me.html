@@ -17,16 +17,22 @@
   <link href="css/fontawesome.min.css" rel="stylesheet" />
   <link href="css/font-awesome-brands.min.css" rel="stylesheet" />
   <link href="css/font-awesome-duotone.min.css" rel="stylesheet" />
-  <!-- Custom CSS -->
+  <!-- My CSS -->
   <link href="css/app.css" rel="stylesheet" />
 </head>
 
 <body>
-  <container class="container" id="contact-page">
+  <div class="container" id="contact-page">
     <nav class="navbar navbar-light navbar-expand-lg px-0">
       <div class="d-flex flex-nowrap flex-grow-1">
         <a class="navbar-brand d-flex align-items-center flex-grow-1" href="./index.html">
-          <div class="btn btn-outline-dark btn-sm font-weight-bold">SC</div>
+          <div class="btn btn-outline-light btn-sm font-weight-bold">
+            <span class="logo angle-brackets min-space">&lt;</span>
+            <span class="logo initial min-space">S</span>
+            <span class="logo initial min-space">C</span>
+            <span class="logo slash min-space">/</span>
+            <span class="logo angle-brackets">&gt;</span>
+          </div>
           <span class="mx-3">Saveen Chadalawada</span>
         </a>
         <button class="navbar-toggler p-1" type="button" data-toggle="collapse" data-target="#navbar-menu"
@@ -57,17 +63,17 @@
         </ul>
       </div>
     </nav>
-    <card class="card border-0 mb-3" id="welcome-banner">
-      <card-body class="card-body d-flex justify-content-between align-items-center">
+    <div class="card border-0 mb-3" id="welcome-banner">
+      <div class="card-body d-flex justify-content-between align-items-center">
         <div>
           <h5 class="card-title">Contact Me</h5>
           <p class="card-text">If you like what you see, send me a message!</p>
         </div>
         <img alt="welcome image" height="auto" id="welcome-svg" src="images/svg/message-sent.svg" />
-      </card-body>
-    </card>
+      </div>
+    </div>
     <section>
-      <container class="container">
+      <div class="container">
         <div class="alert alert-success alert-dismissible d-none fade" id="success-alert" role="alert">
           <strong>Message sent!</strong> I'll respond as soon as I can.
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -97,20 +103,20 @@
             <textarea required class="form-control form-control-lg" id="message" rows="5"></textarea>
             <div class="invalid-feedback">Message can't be empty!</div>
           </form-group>
-          <button type="submit" class="btn btn-primary">Send Message</button>
+          <button type="submit" class="btn btn-primary mt-3">Send Message</button>
         </form>
-      </container>
+      </div>
     </section>
-  </container>
+  </div>
   <footer id="footer" class="py-2">
-    <container class="container">
-      <row class="row d-flex">
+    <div class="container">
+      <div class="row d-flex">
         <img alt="footer image" class="col-4" height="auto" id="footer-svg" src="images/svg/web-developer-1.svg"
           width="200" />
-        <column class="col-8">
+        <div class="col-8">
           <h5>Thanks for visiting!</h5>
           <h6>You can also find me on</h6>
-          <column class="col-md-8 col-sm-12 d-flex justify-content-between fa fa-2x">
+          <div class="col-md-8 col-sm-12 d-flex justify-content-between fa fa-2x">
             <a class="text-dark" data-toggle="tooltip" href="https://www.facebook.com/saveen.chadalawada" target="_blank"
               title="Facebook"><i id="fb-icon" class="fab fa-facebook"></i></a>
             <a class="text-dark" data-toggle="tooltip" href="https://twitter.com/saveenchad" target="_blank" title="Twitter"><i
@@ -123,18 +129,19 @@
                 id="gh-icon" class="fab fa-github"></i></a>
             <a class="text-dark" data-toggle="tooltip" href="https://gitlab.com/saveenchad1" target="_blank" title="GitLab"><i
                 id="gl-icon" class="fab fa-gitlab"></i></a>
-          </column>
-        </column>
-      </row>
-    </container>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LdlBOMUAAAAAHSmd6SWtjdstMO1RmHlzgkSmqn4"></script> -->
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- jQuery (Bootstrap dependency) -->
   <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap JS -->
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap-4.4.1.min.js"></script>
+  <!-- My JS -->
   <script src="js/app.js"></script>
 </body>
 

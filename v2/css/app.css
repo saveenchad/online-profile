@@ -3,9 +3,21 @@ body {
   background: #f5f6fa;
 }
 
-/* semantic elements */
-container, card, card-body, row, column, form-row, form-group {
-  display: block;
+.logo {
+  font-family: consolas;
+}
+
+.logo.angle-brackets,
+.logo.slash {
+  color: #808080;
+}
+
+.logo.initial {
+  color: #4ec9b0;
+}
+
+.logo.min-space {
+  letter-spacing: -4px;
 }
 
 #welcome-banner {
@@ -119,4 +131,27 @@ container, card, card-body, row, column, form-row, form-group {
 
 .collapse-title .fad {
   transition: transform 0.35s ease;
+}
+
+@media only screen and (max-width: 576px) {
+  /* mobile-phones */
+}
+
+@media only screen and (min-width: 576px) {
+  /* mobile-phones */
+}
+
+@media only screen and (min-width: 768px) {
+  /* tablets */
+}
+
+@media only screen and (min-width: 992px) {
+  /* desktops */
+  .nav-item.active .nav-link {
+    border-bottom: 2px solid rgba(0,0,0,0.9);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* large desktops */
 }
